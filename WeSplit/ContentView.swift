@@ -60,6 +60,7 @@ struct ContentView: View {
                             Text(grandTotal, format: currencyCode)
                                 .font(.title2)
                                 .fontWeight(.semibold)
+                                .foregroundColor(tipPercentage == 0 ? .red : .primary)
                         }
                         HStack {
                             Text("Amount Per Person")
